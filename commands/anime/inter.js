@@ -319,7 +319,7 @@ await client.sendMessage(
     mentions: [who, m.sender],
   },
   { quoted: m },
-),
+)
     } catch(e) {
       await m.reply(msgglobal + e)
     }
