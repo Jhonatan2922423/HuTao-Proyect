@@ -305,23 +305,23 @@ export default {
 
     try {
       const response = await fetch(
-        `${api.url2}/sfw/interaction?inter=${currentCommand}&key=${api.key2}`,
-      )
-      const json = await response.json()
-      const { result } = json
+  `${api.url2}/sfw/interaction?inter=${currentCommand}&key=${api.key2}`
+)
 
-      await client.sendMessage(
-        m.chat,
-        {
-          video: { url: result },
-          gifPlayback: true,
-          caption,
-          mentions: [who, m.sender],
-        },
-        { quoted: m },
-      )
-    } catch {
-      await m.reply(msgglobal)
+const videoBuffer = await response.buffer()
+
+await client.sendMessage(
+  m.chat,
+  {
+    video: videoBuffer, 
+    gifPlayback: true,
+    caption,
+    mentions: [who, m.sender],
+  },
+  { quoted: m },
+),
+    } catch(e) {
+      await m.reply(msgglobal + e)
     }
   },
 };
