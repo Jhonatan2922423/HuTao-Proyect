@@ -72,7 +72,7 @@ export default {
 𖹭᳔ㅤㅤㅤׄㅤㅤ🍵ㅤㅤׅㅤㅤゕㅤㅤׄㅤㅤㅤ𑄾𑄾
 
 ׅ  ׄ  🥤   ׅ り Tipo :: *${botType}*
-ׅ  ׄ  🥤   ׅ り Developer :: ${owner ? (!isNaN(owner.replace(/@s\.whatsapp\.net$/, '')) ? `@${owner.split('@')[0]}` : owner) : "Oculto por privacidad"}
+ׅ  ׄ  🥤   ׅ り Developer :: ${owner ? (!isNaN(owner : "Oculto por privacidad"}
 ׅ  ׄ  🥤   ׅ り Activo Desde :: *${formattedUptimeDate}*
 ׅ  ׄ  🥤   ׅ り Plataforma :: *${platform}*
 ׅ  ׄ  🥤   ׅ り NodeJS :: *${nodeVersion}*
