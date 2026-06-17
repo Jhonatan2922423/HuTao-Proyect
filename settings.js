@@ -2,7 +2,7 @@ import fs from 'fs';
 import { watchFile, unwatchFile } from 'fs'
 import { fileURLToPath } from 'url'
 
-global.owner = ['5218711426787', '5218712620915']
+global.owner = ['573113328256', '573113328256']
 global.sessionName = 'Sessions/Owner'
 global.version = '^2.0'
 
@@ -22,12 +22,12 @@ global.bot = {
   web: 'https://github.com/CheirZ'
 }
 
-global.mods = ['5218711426787', 
-               '5218712620915',
+global.mods = ['573113328256', 
+               '573113328256',
                //esclavos del rw
-              '5493873416766',
-              '573144875412',
-              '573142349959']
+              '573113328256',
+              '573113328256',
+              '573113328256']
 
 global.msgglobal = '[Error: *TypeError*] fetch failed'
 globalThis.dev = '★彡[xɪ_ᴍɪɢᴜᴇʟᴏɴ77xx]彡★'
